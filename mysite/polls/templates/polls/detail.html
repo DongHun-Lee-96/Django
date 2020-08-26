@@ -2,7 +2,7 @@
 <hr>
 
 <!--Django Template 에서는 소괄호 사용 안함-->
-<form action = 'polls/vote/{{question.id}}'>
+<form action = '/polls/vote/{{question.id}}'>
 {% for choice in question.choice_set.all %}
     <input type='radio' name='choice' value='{{ choice.id}}'>
     {{ choice.choice_text }} / 
