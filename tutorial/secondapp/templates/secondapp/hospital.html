@@ -2,6 +2,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+{% comment %} input select textarea require name attribute {% endcomment %}
+<form method = 'get' action = '/second/hospital/'>
+    검색어 : <input type = 'text' name = 'search'>
+    <input type = 'submit'>
+</form>
+
 <table class="table table-striped">
     <tr>
         <td>시도</td>

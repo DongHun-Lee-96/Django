@@ -5,6 +5,8 @@ from .models import Hospital
 
 def hospital(request):
     search = request.GET.get('search')
+    if not search:
+        search = ''
 
     hospital = Hospital.objects.filter(name__contains=search)
     #hospital = Hospital.objects.all()
