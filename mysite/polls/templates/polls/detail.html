@@ -10,3 +10,6 @@
 {% endfor %}
 <input type='submit' value='vote now'>
 </form>
+<form action="/polls/reset/{{question.id}}">
+    <input type='submit' value='reset vote'>
+</form>
